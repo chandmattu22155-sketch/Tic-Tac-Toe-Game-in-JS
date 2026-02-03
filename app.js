@@ -4,7 +4,7 @@
  let msgContainer = document.querySelector(".msg-container");
  let msg = document.querySelector("#msg");
 
- let turnO = true; //playerX, playerO
+ let turnO = true; 
 
  let arr = ["apple","banana","litchi"];
 
@@ -29,10 +29,10 @@
 boxes.forEach((box) => {
      box.addEventListener("click", () =>{
     
-     if (turnO){   //playerO
+     if (turnO){   
         box.innerText = "O";
         turnO = false;
-     } else {    //playerX
+     } else {    
         box.innerText = "X";
         turnO = true;
      }
@@ -78,3 +78,4 @@ boxes.forEach((box) => {
 
   newGameBtn.addEventListener("click",resetGame);
   resetBtn.addEventListener("click",resetGame);
+   
